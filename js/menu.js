@@ -31,15 +31,18 @@ function init() {
     });
   }
 
+  // Add wrapper block for prevent background scrolling
+  $('body').wrapInner('<div class="scroll-wrapper"></div>');
+
   $('.fl-menu-overlay').click(function() {
     $(this).closest('.fl-menu').removeClass('active');
     $('.fl-viewport-header .hamburger').removeClass('is-active');
-    $('body, body .container-fluid').removeClass('has-slide-menu');
+    $('.scroll-wrapper').removeClass('has-slide-menu');
   });
 
   $('.fl-menu .fl-close-menu').on('click', function() {
     $(this).parents('.fl-menu').removeClass('active');
-    $('body, body .container-fluid').removeClass('has-slide-menu');
+    $('.scroll-wrapper').removeClass('has-slide-menu');
   });
 
   $('[open-about-overlay]').on('click', function() {
@@ -51,6 +54,6 @@ function init() {
   $('[data-fl-toggle-menu]').click(function (event) {
     event.preventDefault();
     $('.fl-viewport-header .hamburger').toggleClass('is-active');
-    $('body, body .container-fluid').toggleClass('has-slide-menu');
+    $('.scroll-wrapper').toggleClass('has-slide-menu');
   });
 }
