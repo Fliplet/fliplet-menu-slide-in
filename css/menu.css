@@ -430,5 +430,7 @@ html.no-history.mode-interact .fl-viewport-header .nav-left {
 }
 
 .has-slide-menu {
-  overflow-y: hidden;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
 }
