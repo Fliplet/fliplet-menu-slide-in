@@ -114,12 +114,9 @@ html.android .fl-with-top-menu main.fl-page-content-wrapper {
 }
 
 .fl-viewport-header .nav-left .btn-label {
-  display: inline-block;
-  padding-left: 22px;
-  padding-right: 22px;
-  text-indent: -9999px;
-  width: 0;
+  display: none;
 }
+
 @media screen and (min-width: 400px) {
   .fl-viewport-header-left .nav-left + .nav-right + .nav-title,
   .fl-viewport-header-left .nav-title {
@@ -135,9 +132,7 @@ html.android .fl-with-top-menu main.fl-page-content-wrapper {
   }
 
   .fl-viewport-header .nav-left .btn-label {
-    padding: 0;
-    text-indent: initial;
-    width: auto;
+    display: inline-block;
     position: relative;
     left: -15px;
     top: -4px;

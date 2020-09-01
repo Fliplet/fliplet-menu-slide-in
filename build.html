@@ -1,11 +1,11 @@
 <!-- HEADER -->
 <div class="fl-viewport-header {{#if location}}fl-viewport-header-left{{/if}}">
   {{#if location}} {{#if canGoBack}}
-  <span class="nav-left fl-menu-back" data-fl-navigate-back>
+  <span class="nav-left fl-menu-back focus-outline" data-fl-navigate-back tabindex="0">
     <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
   </span>
   {{/if}} {{#if pages}}
-  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="1">
+  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="0">
     <div class="hamburger hamburger--slider">
       <span class="hamburger-box">
         <span class="hamburger-inner">
@@ -19,7 +19,7 @@
     <span>{{title}}</span>
   </span>
   {{else}} {{#if canGoBack}}
-  <span class="nav-left fl-menu-back" data-fl-navigate-back>
+  <span class="nav-left fl-menu-back focus-outline" data-fl-navigate-back tabindex="0">
     <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
   </span>
   {{/if}}
@@ -27,7 +27,7 @@
     <span>{{title}}</span>
   </span>
   {{#if pages}}
-  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="1">
+  <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="0">
     <div class="hamburger hamburger--slider">
       <span class="hamburger-box">
         <span class="hamburger-inner">
@@ -57,7 +57,7 @@
         <ul class="main-menu">
           {{#each pages as |page pageIndex|}}
           <li class="linked {{#if page.icon}}with-icon{{/if}} focus-outline" data-fl-navigate='{{{page.action}}}'
-            data-page-id="{{page.pageId}}" tabindex="1">
+            data-page-id="{{page.pageId}}" tabindex="0">
             {{#if page.icon}}
             <div class="fl-menu-icon">
               <i class="{{page.icon}} fa-fw"></i>
