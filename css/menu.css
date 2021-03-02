@@ -233,14 +233,6 @@ html.android .fl-with-top-menu main.fl-page-content-wrapper {
   pointer-events: all;
 }
 
-.fl-menu .fl-menu-foot {
-  order: 3;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
 
 .fl-app-menu-toolbar {
   position: absolute;
