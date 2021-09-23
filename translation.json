@@ -5,7 +5,7 @@
                 "actions": {
                     "back": "Back",
                     "exit": "Exit",
-                    "overlay": "About this app"
+                    "about": "About this app"
                 }
             }
         }
