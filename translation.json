@@ -1,0 +1,13 @@
+{
+    "widgets": {
+        "menuSlideIn": {
+            "dataSource": {
+                "actions": {
+                    "back": "Back",
+                    "exit": "Exit",
+                    "overlay": "About this app"
+                }
+            }
+        }
+    }
+}
