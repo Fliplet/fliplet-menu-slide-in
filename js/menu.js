@@ -16,7 +16,7 @@ function init() {
           '<i class="fa fa-fw fa-sign-out"></i>',
         '</div>',
         '<i class="fa fa-angle-right linked-icon" aria-hidden="true"></i>',
-        '<span class="internal-link buttonControl">Exit</span>',
+        '<span class="internal-link buttonControl">' + T('widgets.menuSlideIn.dataSource.actions.exit') + '</span>',
       '</li>'
     ].join(''));
 
