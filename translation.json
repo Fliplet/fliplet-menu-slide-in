@@ -1,7 +1,7 @@
 {
     "widgets": {
         "menu": {
-            "slideInBar": {
+            "slideIn": {
                 "actions": {
                     "back": "Back",
                     "exit": "Exit",
