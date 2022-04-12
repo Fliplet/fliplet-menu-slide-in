@@ -275,6 +275,14 @@ html.android .fl-with-top-menu main.fl-page-content-wrapper {
   bottom: 25px;
 }
 
+.fl-menu .fl-menu-foot {
+  order: 3;
+  right: 0;
+  bottom: 25px;
+  left: 0;
+  z-index: 1;
+}
+
 .fl-menu.fl-app-menu .fl-menu-foot ~ .fl-menu-body {
   bottom: 21px;
   bottom: calc(constant(safe-area-inset-bottom) + 21px);
