@@ -2,7 +2,7 @@
 <div class="fl-viewport-header {{#if location}}fl-viewport-header-left{{/if}}">
   {{#if location}} {{#if canGoBack}}
   <span class="nav-left fl-menu-back focus-outline" data-fl-navigate-back tabindex="0">
-    <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
+    <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label" data-translate="widgets.menu.slideIn.actions.back">Back</span>
   </span>
   {{/if}} {{#if pages}}
   <span class="nav-right focus-outline" data-fl-toggle-menu=".fl-menu" tabindex="0">
@@ -20,7 +20,7 @@
   </span>
   {{else}} {{#if canGoBack}}
   <span class="nav-left fl-menu-back focus-outline" data-fl-navigate-back tabindex="0">
-    <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label">Back</span>
+    <i class="fa fa-angle-left" aria-hidden="true"></i> <span class="btn-label" data-translate="widgets.menu.slideIn.actions.back">Back</span>
   </span>
   {{/if}}
   <span class="nav-title">
@@ -66,7 +66,7 @@
     <div class="fl-menu-foot">
       <div class="fl-app-menu-toolbar">
         <div class="copyright">
-          <a class="focus-outline" tabindex="0" href="#" open-about-overlay>About this app</a>
+          <a class="focus-outline" tabindex="0" href="#" open-about-overlay data-translate="widgets.menu.slideIn.actions.about">About this app</a>
         </div>
       </div>
     </div>
